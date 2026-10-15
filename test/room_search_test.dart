@@ -5,7 +5,7 @@ void main() {
   final rooms = ['B303', 'B304', 'A101'];
 
   test('filters by room code', () {
-    expect(filterRooms(rooms, 'B3'), ['B303']);
+    expect(filterRooms(rooms, 'B3'), ['B303', 'B304']);
   });
 
   test('empty keyword returns nothing', () {
